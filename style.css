@@ -1,0 +1,352 @@
+
+body{
+    margin:0;
+    padding:0;
+    background-color: #faf3de;
+
+}
+
+/* Home Page Navigation */
+
+.left-nav li{
+  padding:5px;
+  font-family: 'Francois One',sans-serif;
+  font-size: 25px;
+}
+
+.left-nav {
+  float: left;
+  flex-direction: column;
+  list-style: none;
+  margin-left: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+.right-nav {
+  float: right;
+  display:flex;
+  flex-direction:column;
+  align-self:flex-end;
+  margin-right: 50px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  font-family:'Francois One',sans-serif;
+  font-size: 20px;
+
+}
+
+/* Back Button */
+
+.backButton {
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Francois One',sans-serif;
+  decoration:none;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-right: 10px;
+}
+
+/*links*/
+.backButton a {
+  /* border: 1px solid blue; */
+  padding: 10px;
+  color: #e0b5ff;
+}
+
+a{
+  text-decoration: none;
+  color:#e0b5ff;
+}
+
+a:visited{
+  text-decoration: none;
+  decoration: none;
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+
+/*Cover Page*/
+
+.site-container {
+  color:#e3b017;
+  text-transform: uppercase;
+  font-size:36px;
+  font-weight:bold;
+  position:fixed;
+  width:100%;
+  bottom:45%;
+
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#flip {
+  height:50px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:#203a43;
+}
+#flip div:first-child div {
+  background:#3c3b3f;
+}
+#flip div:last-child div {
+  background:#0f2027;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+
+/*Tangled*/
+
+
+
+
+
+/*Strangerthings Characters Cards*/
+
+.cards img:hover{
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+.aphoto img:hover{
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+.card-container{
+  background-color:;
+  display:grid;
+  grid-template-columns: 350px 350px 350px;
+  justify-content: center;
+  grid-gap: 1em;
+  height:300px;
+  padding:1em;
+  padding-bottom: 2em;
+
+}
+.cards{
+  background-color: black;
+  color: white;
+}
+.cards img{
+  object-fit: cover;
+  width:100%;
+  height:85%;
+}
+
+.cards h3 {
+  padding: 5px 10px;
+  font-family: 'Fredericka the Great';
+}
+
+.cards p {
+  padding: 0px 10px;
+  color:black;
+}
+
+/*About Page*/
+
+.aphoto{
+  height:100%;
+  width: 100%;
+}
+.aboutphotos {
+  height: 100vh;
+  background: #151517;
+  display: grid;
+  grid-template-columns: 45% 45% 10%;
+  grid-template-rows: 500px;
+  padding: 30px;
+  align-items: center;
+}
+
+.ab{
+  display: grid;
+  height: 300px;
+  width: 500px;
+  padding-left: 55px;
+  padding-top: 80px;
+}
+
+.bc{
+  display: grid;
+  height: 300px;
+  width: 500px;
+  padding-left: 55px;
+  padding-top: 80px;
+}
+
+.ab img:hover{
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+.bc img:hover{
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+
+.abt {
+  background-color: #151517;
+}
+
+/*Eleven's Page Photos*/
+
+.eleven {
+  background-color: black;
+  font-family: 'Fredericka the Great';
+  color: white;
+}
+
+
+.elevenphotos{
+  height: 100vh;
+  background: black;
+  display: grid;
+  grid-template-columns: 50% 30% 10%;
+  grid-template-rows: 500px;
+}
+
+.photoone{
+  margin:10px;
+  height:200px;
+  width: 400px;
+}
+
+
+
+/*Eleven Page Description*/
+
+.pl{
+color:white;
+padding-top: 30px;
+}
+
+.pl h2{
+color: red;
+}
+
+.elevenfriends{
+  padding-top: 20px;
+}
+.elevenfriends p{
+  padding-top: 10px;
+}
+
+.media img{
+  width: 300px;
+  height:200px;
+}
+
+/*Tangled pictures*/
+
+.purple {
+  background-color: #300445;
+  color:#ede432;
+  font-size:150%;
+}
+.wrapper {
+  padding-top:200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > * {
+    margin: 5px;
+  }
+}
+
+.media {
+  padding: 10px;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  img {
+      max-width: 100%;
+      height: auto;
+    }
+}
+
+.layer {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 90%;
+  background: #FFF;
+  color: #151E3F;
+  transition: all 0.9s ease;
+  p {
+    transition: all 0.9s ease;
+    transform: scale(0.1)
+  }
+}
+
+.layer p {
+  font-family: 'Mansalva',cursive;
+  text-align: center;
+  font-size: 15px;
+  letter-spacing:1px;
+}
+
+.media:hover .layer {
+  opacity: 0.8;
+  width: 90%;
+  transition: all 0.5s ease;
+  p {
+    transform: scale(1);
+    transition: all 0.9s ease;
+  }
+}
+
+@media (max-width: 800px){
+  body {
+    transform: scale(0.6);
+  }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+    display: block;
+    > * {
+      margin: 10px;
+    }
+  }
+}
